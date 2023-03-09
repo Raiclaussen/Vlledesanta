@@ -475,15 +475,13 @@ input[type="submit"] {
 }
   
 
-  
-
 
 /* FOOTER */
+
 
 .footer-container{
     padding: 40px 0;
     background-color: #212529;
-    /*clear: both;*/
 
 }
 
@@ -511,11 +509,37 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.footer-list{
+    padding: 0;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    list-style: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-list li{
+    padding: 0 15px;
+    display: inline-block;
+
+}
+
+.footer-list a{
+    opacity: 0.8;
+    color: #f8f8f8;
+    text-decoration: none;
+    
+}
+
+.footer-list a:hover{
+    opacity: 1;
+}
 
 .copyright{
     font-size: 14px;
     margin-top: 15px;
     text-align: center;
-    color: #f8f8f8;
+    color: rgb(203, 199, 199);
     cursor: pointer;
 }
