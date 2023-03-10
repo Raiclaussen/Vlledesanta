@@ -15,6 +15,12 @@ body{
 /* INDEX */
 
 
+img{
+    width: 150px;
+    height: 100px;
+}
+
+
 .contenedorcinco{
     width: 100%;
     display: flex;
