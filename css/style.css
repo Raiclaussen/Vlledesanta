@@ -179,6 +179,11 @@ article{
         padding-right: 1px;
         width: 49%;
     }
+
+    .title-nosotros{
+        padding: 10px;
+    }
+    
     #main-section{
         width: 100%;
     }
