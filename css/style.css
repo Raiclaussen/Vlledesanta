@@ -376,7 +376,7 @@ article{
 }
   
 .pre01{
-    padding: 85px;
+    padding: 90px;
     color: whitesmoke;
 }
   
@@ -407,6 +407,8 @@ button.btn {
 @media (min-width: 768px) {
     .pre01{
         text-align: center;
+        justify-content: center;
+        display: flex;
     }
 } 
 
