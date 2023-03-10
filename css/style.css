@@ -402,6 +402,12 @@ button.btn {
     display: flex;
 }
 
+@media (min-width: 768px) {
+    .pre01 {
+      display: flex;
+      flex-direction: row;
+    }
+} 
 
 /* CONTACTOS */
 
