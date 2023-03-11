@@ -15,7 +15,7 @@ body{
 /* INDEX */
 
 
-img{
+.logo{
     width: 150px;
     height: 100px;
 }
@@ -107,85 +107,104 @@ img{
 }
 
 
+
 /* NOSOTROS */
 
+/* Estilos para los títulos */
 
-h2{
+h2 {
     margin: 10px;
     font-size: 1.5em;
 }
+    
+/* Estilos para el texto */
 
-p{
+p {
     line-height: 1.3em;
 }
-
-#main-container{
-    background-color: white;
-    margin: 0 auto;
-
-    min-width: 375px;
-    width: 1280px;
-}
-#main-section{
-    width: 1280px;
-}
-
-
-#main-section, aside{
-    display: inline-block;
-    vertical-align: top;
-}
-#main-section{
-    padding: 20px;
-    box-sizing: border-box;
-    width: 900px;
-}
-aside{
-    box-sizing: border-box;
-    padding: 20px;
-    width: 375px;
-}
-
-aside .related{
-    margin: 0 auto;
-}
-
-article{
-    font-size: 1.1em;
-}
-
-
-@media screen and (max-width: 1280px){
-    aside{
-        width: 29%;
-    }
-    #main-section{
-        width: 70%;
-    }
     
+.main-banner {
+    width: 100%;
+    height: auto;
 }
 
-@media screen and (max-width: 767px){
-    aside{
-        width: 100%;
+#imagen-titular {
+    padding: 10%;
+}
+
+.banner-titular {
+    width: 100%;
+    height: auto;
+}
+
+#main-section,
+aside {
+    display: block;
+    width: 100%;
+    padding: 5%;
+}
+
+.related {
+    margin: 5%;
+    display: block;
+    width: 100%;
+    padding-right: 0;
+}
+
+article {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
     }
-    aside #related-section{
-        display: inline-block;
+    to {
+        opacity: 1;
     }
-    aside #related-section .related{
-        margin: 10px;
-        display: inline-block;
-        vertical-align: top;
-        padding-right: 1px;
-        width: 49%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #imagen-titular {
+        padding: 5%;
     }
 
-    .title-nosotros{
-        margin: 10px;
+    #main-section,
+    aside {
+        display: inline-block;
+        width: 50%;
+        padding: 5%;
     }
 
-    #main-section{
+    aside {
+        padding-left: 0;
+    }
+
+    .related {
+        margin: 2.5%;
         width: 100%;
+    }
+
+    article {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-banner {
+        max-width: 100%;
+        height: auto;
+        margin: 120px 0;
+        
     }
 }
     
@@ -208,8 +227,11 @@ article{
 
 .titulo-servicios {
 	font-size: 24px;
-	padding: 60px 0;
+	padding: 120px 0px;
+    color: whitesmoke;  
+    text-align: center;
 }
+  
 
 .contenedor-conciertos {
 
@@ -286,6 +308,7 @@ article{
 	margin: 15px;
 	font-weight: bold;
     flex: 0 0 calc(50% - 20px);
+    text-shadow: -1px -1px 0 #212529, 1px -1px 0 #212529, -1px 1px 0 #212529, 1px 1px 0 #212529;
 }
 
 .banner .boton {
@@ -372,12 +395,13 @@ article{
 
 .container-actualidad{
     background: #212529;
-    padding: 20px;
+    padding: 40px;
 }
   
 .pre01{
-    padding: 90px;
-    color: whitesmoke;
+    padding: 70px;
+    color: whitesmoke;  
+    text-align: center;
 }
   
 .pre02{
