@@ -20,69 +20,68 @@ body{
     height: 100px;
 }
 
-
-.contenedorcinco{
-    width: 100%;
+  
+.contenedorcinco {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 50vh;
+    gap: 40px; /* Agregamos un espacio entre cada elemento */
 }
-
-.contenedorcinco figure{
+    
+.contenedorcinco figure {
     position:relative;
-    height: 250px;
+    height: 300px;
     cursor: pointer;
     width: 350px;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     margin: 20px;
+    transition: all 0.4s ease-out; /* Movemos la transición al contenedor para simplificar */
 }
-
-.contenedorcinco figure img{
+    
+.contenedorcinco figure img {
     width: 100%;
     height: 100%;
-    transition: all 400ms ease-out;
+    max-width: 100%;
     will-change: transform;
 }
-
-.contenedorcinco figure .capa{
+    
+.contenedorcinco figure .capa {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,103,123,0.7);
-    transition: all 400ms ease-out;
+    background: rgba(0, 103, 123, 0.7);
     opacity: 0;
     visibility: hidden;
     text-align: center;
+    transition: opacity 0.4s ease-out, visibility 0.4s ease-out, margin 0.4s ease-out; /* Agrupamos las transiciones */
 }
-
+    
 .contenedorcinco figure:hover > .capa {
     opacity: 1;
     visibility: visible;
-}
-
-.contenedorcinco figure:hover > .capa h3{
-    margin-top: 70px;
+    margin-top: 70px; /* Movemos este estilo aquí para la transición */
     margin-bottom: 15px;
 }
-
-.contenedorcinco figure:hover > img{
+    
+.contenedorcinco figure:hover > img {
     transform: scale(1.3);
 }
-
-.contenedorcinco figure .capa h3{
+    
+.contenedorcinco figure .capa h3 {
     color: #fff;
     font-weight: 400;
     margin-bottom: 120px;
-    transition: all 400ms ease-out;
     margin-top: 30px;
+    transition: margin 0.4s ease-out; /* Agregamos transición para el margen */
 }
-
-.contenedorcinco figure .capa p{
+    
+.contenedorcinco figure .capa p {
     color: #fff;
     font-size: 15px;
     line-height: 1.5;
@@ -90,22 +89,18 @@ body{
     max-width: 220px;
     margin: auto;
 }
-
-.col-md-4 {
-    float: left;
-    width: 33.33%;
-}
-
-
-/* Estilos para dispositivos móviles */
+    
 
 @media screen and (max-width: 768px) {
-    .contenedorcinco figure{
-        width: 100%;
-        margin: 20px 0;
+    .contenedorcinco {
+      flex-direction: column;
     }
-}
-
+    .contenedorcinco figure {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+    
 
 
 /* NOSOTROS */
@@ -292,9 +287,7 @@ article {
 	justify-content: space-between;
     max-width: 100%;
     width: auto;
-  }
-
-
+}
 
 .banner ul {
 	list-style: none;
