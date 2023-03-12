@@ -2,11 +2,14 @@
 
 
 @media screen and (max-width: 768px) {
-    .contenedorcinco figure{
-        width: 100%;
-        margin: 20px 0;
+    .contenedorcinco {
+      flex-direction: column;
     }
-}
+    .contenedorcinco figure {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
 
 @media screen and (min-width: 768px) {
 	#imagen-titular {
