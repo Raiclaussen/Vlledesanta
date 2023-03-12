@@ -71,8 +71,10 @@
 
 
 .footer-container {
+	position: fixed;
+	bottom: 0;
 	padding: 40px 0;
-	background-color: $color-principal;
+	background-color:$color-principal;
 }
 .footer-icons {
 	color: $color-icons;
