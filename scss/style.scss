@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-principal;
+}
+body {
+	background: $color-principal;
+	color: $color-font;
+}
+.logo {
+	width: 150px;
+	height: 100px;
+}
+
+
+@import"./html/index";
+@import"./html/nosotros";
+@import"./html/servicios";
+@import"./html/actualidad";
+@import"./html/contactos";
+@import"./variables/media";
+@import"./variables/var";
+@import"./variables/mixin";
+@import"./variables/extend";
+

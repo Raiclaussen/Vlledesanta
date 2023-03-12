@@ -1,0 +1,28 @@
+/* MIXIN */
+
+@mixin flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin colum{
+    display: flex;
+	flex-direction: column
+}
+
+@mixin inline-block{
+    display: inline-block;
+    text-align: center;
+}
+
+@mixin wrap{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@mixin block{
+    display: block;
+	width: 100%;
+}
