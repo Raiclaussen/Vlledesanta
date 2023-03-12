@@ -2,14 +2,12 @@
 
 
 @media screen and (max-width: 768px) {
-	.contenedorcinco {
-		flex-direction: column;
-		figure {
-			width: 100%;
-			margin: 20px 0;
-		}
-	}
+    .contenedorcinco figure{
+        width: 100%;
+        margin: 20px 0;
+    }
 }
+
 @media screen and (min-width: 768px) {
 	#imagen-titular {
 		padding: 5%;
